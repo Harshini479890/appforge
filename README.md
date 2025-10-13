@@ -30,7 +30,7 @@ npx expo install @react-native-async-storage/async-storage
 npx expo install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated react-native-vector-icons
 npx expo install @react-navigation
 npx expo install @react-stack
-5.Open the folder in vscode and create App.js,AppNavigator.js,Home screen.js, SignupScreen.js, Rotameter.js, Venturimeter.js, Login screen.js,firebase.js,settings.js.
+5.Open the folder in vscode and create App.js,AppNavigator.js,Home screen.js, SignupScreen.js, Rotameter.js, Venturimeter.js, Login screen.js,firebase.js.
 6.npx expo start
 7.Scan the qr form expo go app
 
