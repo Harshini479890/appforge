@@ -38,3 +38,47 @@ npx expo install @react-stack
 
 Note:
 Ensure both laptop and mobile with same network/wifi.
+
+
+Firebase setup:
+1.Go to firebase.com
+2.Go down and click get started in console
+3.Click create a new firebase project
+4.Enter your project name 
+5.Click create
+6.Your firebase project is ready 
+7.Left side bar go to build
+8.In build go to authentication
+9.Get started
+10.Native providers
+     Email/Password
+11.Email/Password - Enable and then click save
+12.Go to project overview over top left corner click add app 
+13.select a platform click web(</>)
+14.Give an app nickname and don't enable also set up firebase hosting and click register app
+15.In Add Firebase SDK then u will get a code that is unique to everyone copy only from const (Firebase configuration) to firebase.js 
+16.Then copy this code // firestore.js
+import { initializeApp } from 'firebase/app';
+import { getAuth, initializeAuth, getReactNativePersistence } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+// Firebase configuration
+const firebaseConfig = {
+  
+};
+
+// Initialize Firebase app
+const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase Auth with persistence (using AsyncStorage)
+const auth = initializeAuth(app, {
+  persistence: getReactNativePersistence(AsyncStorage),  // Set persistence
+});
+
+// Initialize Firestore
+const db = getFirestore(app);
+
+// Export auth and db instances
+export { auth, db };
+In this firebase configuration paste the code u got from firebase.com
