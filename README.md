@@ -1,5 +1,7 @@
 # appforge
 Created an app using react native (mobile app) with venturimeter and rotameter experiments calculations.
+
+
 Why do I have a folder named ".expo" in my project?
 
 The ".expo" folder is created when an Expo project is started using "expo start" command.
@@ -31,7 +33,7 @@ npx expo install react-native-screens react-native-safe-area-context react-nativ
 npx expo install @react-navigation
 npx expo install @react-stack
 5.Open the folder in vscode and create App.js,AppNavigator.js,Home screen.js, SignupScreen.js, Rotameter.js, Venturimeter.js, Login screen.js,firebase.js.
-6.npx expo start
+6.Navigate to appforge by command (cd appforge) and type npx expo start.
 7.Scan the qr form expo go app
 
 Note:
