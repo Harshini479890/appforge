@@ -58,6 +58,8 @@ Firebase setup:
 14.Give an app nickname and don't enable also set up firebase hosting and click register app
 15.In Add Firebase SDK then u will get a code that is unique to everyone copy only from const (Firebase configuration) to firebase.js 
 16.Then copy this code // firestore.js
+
+
 import { initializeApp } from 'firebase/app';
 import { getAuth, initializeAuth, getReactNativePersistence } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
